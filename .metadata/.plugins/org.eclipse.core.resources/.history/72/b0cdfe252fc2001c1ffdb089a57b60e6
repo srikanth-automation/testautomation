@@ -1,0 +1,37 @@
+package basictest;
+
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
+import java.util.List; 
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.Test;
+
+public class dropdown {
+	WebDriver driver;
+  @Test
+  public void Applaunch() {
+	  System.setProperty("webdriver.chrome.driver",
+				"C:\\Users\\User\\Downloads\\chromedriver_win32 (2)\\chromedriver.exe");
+		driver = new ChromeDriver();
+		String url = "http://only-testing-blog.blogspot.com/";
+		driver.get(url);
+	  
+	  
+  }
+  @Test
+  public void selectlist() {
+	 
+   WebElement options = driver.findElement(By.xpath("(//select)[1]"));
+   
+   Select list1 = new Select(options);
+   boolean list_multiple = list1.isMultiple();
+   System.out.println(list1);
+  }
+}

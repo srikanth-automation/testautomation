@@ -1,0 +1,9 @@
+package basictest;
+
+public class Checkbox extends NewTest{
+	
+	String url = "http://only-testing-blog.blogspot.com/";
+	
+	
+
+}

@@ -1,0 +1,17 @@
+package basictest;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.testng.annotations.Test;
+
+public class CheckboxTest extends NewTest {
+  @Test
+  public void checkbox() {
+	  
+	  String url = "http://only-testing-blog.blogspot.com/";
+	  driver.get(url);
+	  WebElement select= driver.findElement(By.xpath("//td[contains(text(),'Dog')/precedingsibling::td/input[@type='checkbox']"));
+   select.click();
+  }
+  
+}

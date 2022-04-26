@@ -1,0 +1,22 @@
+package basictest;
+
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
+
+
+public class NewTest {
+	
+	@Test
+	
+public void launch() { // this method launches the application in chrome
+		
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\User\\Downloads\\chromedriver_win32 (2)\\chromedriver.exe");
+	ChromeDriver driver = new ChromeDriver();
+	String url = "https://opensource-demo.orangehrmlive.com/";
+	driver.get(url);
+	
+		
+	}
+	
+}

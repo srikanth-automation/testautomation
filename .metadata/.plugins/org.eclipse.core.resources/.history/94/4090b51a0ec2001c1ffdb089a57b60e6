@@ -1,0 +1,9 @@
+package basictest;
+
+import org.testng.annotations.Test;
+
+public class Testing Select {
+  @Test
+  public void f() {
+  }
+}

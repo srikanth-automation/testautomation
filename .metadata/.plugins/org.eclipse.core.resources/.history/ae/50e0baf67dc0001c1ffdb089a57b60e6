@@ -1,0 +1,15 @@
+package basictest;
+
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Oraangeweb {
+
+	public static void main(String[] args) {
+		
+	System.setProperty("webdriver.chrome.driver", "C:\\Users\\User\\Downloads\\chromedriver_win32 (2)chromedriver.exe");
+		// TODO Auto-generated method stub
+	ChromeDriver driver = new ChromeDriver();
+System.out.println("Iam back");
+	}
+
+}
